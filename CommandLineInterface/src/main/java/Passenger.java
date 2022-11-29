@@ -1,12 +1,20 @@
+import java.util.Random;
+
 public class Passenger {
     private String name;
     private long contactInfo;
     private int id;
 
-    public Passenger(String name, long contactInfo, int id){
+    public Passenger(String name, long contactInfo){
+        //min and max value for random id
+        int min =10000;
+        int max =99999;
+        //random id
+        int random = (int) Math.floor(Math.random()*(max-min+1)+min);
+
         this.name=name;
         this.contactInfo=contactInfo;
-        this.id=id;
+        this.id=random;
     }
 
     public String getName() {

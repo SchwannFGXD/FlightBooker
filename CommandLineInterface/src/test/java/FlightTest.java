@@ -11,8 +11,8 @@ public class FlightTest {
 
     @BeforeEach
     public void setUp(){
-        flight = new Flight("London", 45678);
-        passenger = new Passenger("Zsolt",478388793, 37890);
+        flight = new Flight("London");
+        passenger = new Passenger("Zsolt",478388793);
     }
 
     @Test
