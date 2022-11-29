@@ -55,7 +55,7 @@ public class Booker {
     public List<Flight> getFlightbyName(String name){
         List<Flight> flightSameDestination = new ArrayList<>();
         for (Flight flight: flightList) {
-            if (flight.getDestination() == name) {
+            if (flight.getDestination().equals(name.trim())) {
                 flightSameDestination.add(flight);
             }
         }
